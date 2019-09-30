@@ -1,0 +1,146 @@
+<ion-content no-bounce padding>
+
+    <!-- Image in the main Screen-->
+    <img src=""
+        style="display:block;width:80%;height:auto;margin-left:auto;margin-right:auto;" />
+
+    <!-- Grid with Icons-->
+    <ion-grid>
+        <!-- First Row-->
+        <ion-row>
+
+            <ion-col col-4>
+                <button ion-button clear (click)="verpdf()" full class="square">
+                    <div>
+                        <i class="far fa-calendar-check fa-3x" style="color:#1571ac"></i>
+                        <div>
+                            <label text-wrap>Solicitar cita</label>
+                        </div>
+                    </div>
+                </button>
+            </ion-col>
+
+            <ion-col col-4>
+                <button ion-button clear full  class="square">
+                    <div>
+                        <i class="fa fa-user-md fa-3x" style="color:#1571ac"></i>
+                        <div>
+                            <label text-wrap>Nuestros profesionales</label>
+                        </div>
+                    </div>
+                </button>
+            </ion-col>
+
+            <ion-col col-4>
+                <button ion-button clear full class="square">
+                    <div>
+                        <i class="far fa-clipboard fa-3x" style="color:#1571ac"></i>
+                        <div>
+                            <label text-wrap>Preparación exámenes</label>
+                        </div>
+                    </div>
+                </button>
+            </ion-col>
+        </ion-row>
+
+        <!-- End of the First Row-->
+
+        <!-- Second Row-->
+        <ion-row>
+            <ion-col col-4>
+                <button ion-button clear full class="square">
+                    <div>
+                        <div>
+                            <i class="fas fa-calendar-alt fa-3x" style="color:#1571ac"></i>
+                        </div>
+                        <label text-wrap>Calendario de eventos</label>
+                    </div>
+                </button>
+            </ion-col>
+
+            <ion-col col-4>
+                <button ion-button clear full  class="square">
+                    <div>
+                        <div>
+                            <i class="far fa-hospital fa-3x" style="color:#1571ac"></i>
+                        </div>
+                        <label text-wrap>Nuestro hospital</label>
+                    </div>
+                </button>
+            </ion-col>
+
+            <ion-col col-4>
+                <button ion-button clear full class="square">
+                    <div>
+                        <div>
+                            <i class="fas fa-hand-holding-usd fa-3x" style="color:#1571ac"></i>
+                        </div>
+                        <label text-wrap>Pagos y anticipos</label>
+                    </div>
+                </button>
+            </ion-col>
+        </ion-row>
+        <!-- End of the Second Row-->
+
+        <!-- Third Row-->
+        <ion-row>
+            <ion-col col-4>
+                <button ion-button clear full class="square">
+                    <div>
+                        <div>
+                            <i class="far fa-envelope-open fa-3x" style="color:#1571ac"></i>
+                        </div>
+                        <label text-wrap>Contáctenos
+                            <br>
+                            <br>
+                        </label>
+                    </div>
+                </button>
+            </ion-col>
+            <ion-col col-4>
+                <button ion-button clear full  class="square">
+                    <div>
+                        <div>
+                            <i class="fas fa-donate fa-3x" style="color:#1571ac"></i>
+                        </div>
+                        <label text-wrap>Donaciones</label>
+                        <br>
+                    </div>
+                </button>
+            </ion-col>
+
+            <ion-col col-4>
+                <button ion-button clear full class="square">
+                    <div>
+                        <div>
+                            <i class="fas fa-people-carry fa-3x" style="color:#1571ac"></i>
+                        </div>
+                        <label text-wrap>Servicios en línea</label>
+                        <br>
+                    </div>
+                </button>
+            </ion-col>
+        </ion-row>
+        <!-- End of the third Row-->
+    </ion-grid>
+
+    <div class="my-overlay" padding [hidden]="overlayHidden">
+
+
+        <i class="fas fa-exclamation-circle fa-4x" style="color:yellow; margin-top:120px;"
+            ></i>
+
+        <h3 ion-label>
+
+
+
+
+
+        <button style="margin-top:-800px; margin-left: 270px;font-weight: bold;" ion-button color="light" clear
+            >Cerrar</button>
+
+    </div>
+
+    <iframe src="../../assets/js/servicio.html"></iframe>
+
+</ion-content>

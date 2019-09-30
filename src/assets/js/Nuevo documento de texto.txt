@@ -1,0 +1,43 @@
+var message = "IQsHDY90q8b81Efi2k5tSg==";
+var password = "6789Service12345";
+var dos = "../../assets/js/application.pdf";
+
+let encrypted = CryptoJS.AES.encrypt(dos, CryptoJS.enc.Utf8.parse(password), {
+    iv: CryptoJS.enc.Utf8.parse('SasIpServiRandom'),
+    mode: CryptoJS.mode.CBC,
+    padding: CryptoJS.pad.Pkcs7
+});
+
+
+let decrypted = CryptoJS.AES.decrypt(dos, CryptoJS.enc.Utf8.parse(password), {
+    iv: CryptoJS.enc.Utf8.parse('SasIpServiRandom'),
+    mode: CryptoJS.mode.CBC,
+    padding: CryptoJS.pad.Pkcs7
+});
+
+console.log(encrypted.toString());
+console.log(decrypted.toString(CryptoJS.enc.Utf8));
+
+
+function ver() {
+    var tres = dos;
+    const base64 = btoa(tres);
+
+    const decode = atob(base64);
+    console.log(base64);
+    console.log(decode);
+    window.open(decode);
+
+}
+
+window.downloadPDF = function downloadPDF() {
+
+    var dlnk = document.getElementById('dwnldLnk');
+    dlnk.href = dos;
+
+    dlnk.click();
+
+
+    alert('toma');
+
+}
